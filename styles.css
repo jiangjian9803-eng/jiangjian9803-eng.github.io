@@ -54,7 +54,7 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .profile-facts div:nth-last-child(-n+2) { border-bottom: 0; }
 .profile-facts span, .profile-facts strong { display: block; }
 .profile-facts span { margin-bottom: 5px; color: var(--blue); font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.profile-facts strong { font-size: 12px; }
+.profile-facts strong { font-size: 14px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 30px; min-height: 54px; padding: 0 22px; border-radius: 999px; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { color: var(--paper); background: var(--ink); box-shadow: 0 14px 30px rgba(23,32,42,.17); }

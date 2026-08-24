@@ -73,14 +73,14 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .hero-card::after { content: ""; position: absolute; width: 300px; height: 300px; right: -120px; top: 60px; border: 1px solid rgba(255,255,255,.15); border-radius: 50%; box-shadow: 0 0 0 48px rgba(255,255,255,.03), 0 0 0 96px rgba(255,255,255,.02); }
 .status-line { position: relative; z-index: 1; display: flex; gap: 9px; align-items: center; font-size: 12px; text-transform: uppercase; letter-spacing: .09em; color: rgba(244,241,235,.72); }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 5px rgba(43,217,196,.12); }
-.portrait-wrap { position: absolute; top: 78px; left: 50%; width: 210px; height: 210px; transform: translateX(-50%); z-index: 1; }
+.portrait-wrap { position: absolute; top: 90px; left: 50%; width: 210px; height: 210px; transform: translateX(-50%); z-index: 1; }
 .portrait-wrap::before { content: ""; position: absolute; inset: -9px; border-radius: 50%; background: conic-gradient(var(--cyan), transparent 38%, var(--cyan)); animation: portrait-spin 10s linear infinite; }
 .portrait-wrap img { position: relative; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; border: 6px solid var(--ink); border-radius: 50%; background: var(--paper); z-index: 1; }
 .portrait-orbit { position: absolute; inset: -22px; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; animation: portrait-spin 16s linear infinite reverse; }
 .portrait-orbit::after { content: ""; position: absolute; top: 25px; right: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 18px var(--cyan); }
 @keyframes portrait-spin { to { transform: rotate(360deg); } }
-.personal-labels { position: absolute; top: 368px; left: 24px; right: 24px; z-index: 2; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
-.personal-labels span { padding: 6px 10px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: rgba(255,255,255,.05); color: var(--paper); font-size: 10px; font-weight: 600; letter-spacing: .04em; }
+.personal-labels { position: absolute; top: 338px; left: 24px; right: 24px; z-index: 2; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.personal-labels span { padding: 6px 10px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: var(--ink); color: var(--paper); font-size: 10px; font-weight: 600; letter-spacing: .04em; }
 .hero-card-copy { position: absolute; left: 28px; bottom: 104px; z-index: 1; }
 .hero-card-copy p { color: var(--cyan); margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: .12em; }
 .hero-card-copy h2 { font-size: 28px; line-height: 1.2; letter-spacing: -.04em; }

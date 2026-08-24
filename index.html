@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jian Jiang — technical recruiter transitioning into software engineering and AI systems." />
+    <meta name="theme-color" content="#07111f" />
+    <title>Jian Jiang — Software & AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Jian Jiang home">JJ<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#lab">AI Lab</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="https://github.com/jiangjian9803-eng" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Based in Markham, Ontario</p>
+          <h1>I connect technical depth with <em>human impact.</em></h1>
+          <p class="hero-intro">
+            Technical recruiter and Master of Engineering graduate building toward software engineering and AI agent development.
+            I turn complex ideas into practical systems—and bring a talent-first perspective to every product I build.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span>↓</span></a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/jian98" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Profile summary">
+          <div class="status-line"><span class="status-dot"></span> Open to software & AI opportunities</div>
+          <div class="monogram" aria-hidden="true">JJ</div>
+          <div class="hero-card-copy">
+            <p>Current focus</p>
+            <h2>Software Engineering<br />AI Agents · Data Systems</h2>
+          </div>
+          <div class="mini-stack">
+            <span>Python</span><span>LLM Apps</span><span>Data</span><span>Git</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="proof-strip" aria-label="Professional highlights">
+        <div><strong>MEng</strong><span>University of Guelph</span></div>
+        <div><strong>AI</strong><span>Agentic systems focus</span></div>
+        <div><strong>Tech</strong><span>Recruiting perspective</span></div>
+        <div><strong>Build</strong><span>Learning in public</span></div>
+      </section>
+
+      <section class="lab-section" id="lab">
+        <canvas id="network-canvas" aria-hidden="true"></canvas>
+        <div class="section-shell lab-shell">
+          <div class="lab-heading reveal">
+            <div>
+              <div class="section-label light-label">Live / AI Lab</div>
+              <h2>Don’t just read about it.<br /><em>Try the thinking loop.</em></h2>
+            </div>
+            <p>Two browser-based prototypes that make agent orchestration and classification tradeoffs visible. No data leaves your browser.</p>
+          </div>
+
+          <div class="lab-grid">
+            <article class="agent-console reveal">
+              <div class="console-topbar">
+                <div class="traffic-lights"><i></i><i></i><i></i></div>
+                <span>agent_lab.py</span>
+                <span class="prototype-badge">Interactive prototype</span>
+              </div>
+              <div class="console-body">
+                <div class="console-intro">
+                  <p>AI Coding Agent</p>
+                  <h3>Turn a software goal into a reviewable workflow.</h3>
+                </div>
+                <label for="agent-task">Give the agent a task</label>
+                <div class="agent-input-row">
+                  <input id="agent-task" value="Add semantic search to a recruiting application" maxlength="100" />
+                  <button id="run-agent" type="button">Run agent <span>▶</span></button>
+                </div>
+                <div class="agent-progress"><span id="agent-progress-bar"></span></div>
+                <div class="agent-steps" id="agent-steps">
+                  <div data-step="plan"><span>01</span><strong>Plan</strong><small>Waiting</small></div>
+                  <div data-step="retrieve"><span>02</span><strong>Retrieve</strong><small>Waiting</small></div>
+                  <div data-step="evaluate"><span>03</span><strong>Evaluate</strong><small>Waiting</small></div>
+                  <div data-step="synthesize"><span>04</span><strong>Synthesize</strong><small>Waiting</small></div>
+                </div>
+                <div class="agent-output" id="agent-output" aria-live="polite">
+                  <span>$</span> Ready. Run the workflow to inspect each stage.
+                </div>
+              </div>
+            </article>
+
+            <article class="ml-playground reveal">
+              <div class="playground-heading">
+                <div><span>ML Playground</span><h3>Classification is a tradeoff.</h3></div>
+                <div class="live-indicator"><i></i> Live</div>
+              </div>
+              <p>Adjust the decision threshold to see how precision and recall respond on a synthetic candidate-matching dataset.</p>
+              <div class="threshold-control">
+                <label for="threshold">Decision threshold <output id="threshold-value">0.55</output></label>
+                <input id="threshold" type="range" min="20" max="85" value="55" />
+                <div class="range-labels"><span>More recall</span><span>More precision</span></div>
+              </div>
+              <div class="metric-grid">
+                <div><span>Precision</span><strong id="precision-value">78%</strong><i><b id="precision-bar"></b></i></div>
+                <div><span>Recall</span><strong id="recall-value">81%</strong><i><b id="recall-bar"></b></i></div>
+                <div><span>F1 score</span><strong id="f1-value">79%</strong><i><b id="f1-bar"></b></i></div>
+              </div>
+              <div class="confusion-matrix" aria-label="Confusion matrix">
+                <div class="matrix-label"></div><div class="matrix-label">Predicted +</div><div class="matrix-label">Predicted −</div>
+                <div class="matrix-label side">Actual +</div><div class="matrix-cell positive"><strong id="tp-value">34</strong><span>True positive</span></div><div class="matrix-cell"><strong id="fn-value">8</strong><span>False negative</span></div>
+                <div class="matrix-label side">Actual −</div><div class="matrix-cell"><strong id="fp-value">10</strong><span>False positive</span></div><div class="matrix-cell positive"><strong id="tn-value">48</strong><span>True negative</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell split-section" id="about">
+        <div class="section-label reveal">01 / About</div>
+        <div class="about-copy reveal">
+          <h2>From finding great builders<br />to becoming one.</h2>
+          <div class="about-grid">
+            <p>
+              My background in technical recruiting taught me how strong engineering teams think: clarify the problem, communicate
+              tradeoffs, and deliver outcomes that matter. Now I am applying that same discipline to code.
+            </p>
+            <p>
+              I am focused on Python, backend fundamentals, data workflows, and practical AI agents. My goal is to build reliable,
+              understandable products at the intersection of people, data, and intelligent software.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="work">
+        <div class="section-heading reveal">
+          <div class="section-label">02 / Selected work</div>
+          <h2>Projects in progress.</h2>
+          <p>Real projects will replace these starter cards as the portfolio grows.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <div class="project-tags"><span>Python</span><span>AI Agents</span><span>In progress</span></div>
+              <h3>Agentic Research Assistant</h3>
+              <p>An AI workflow concept for structured research, source tracking, and evidence-backed summaries.</p>
+              <a href="https://github.com/jiangjian9803-eng" target="_blank" rel="noreferrer">View GitHub profile ↗</a>
+            </div>
+            <div class="project-visual agent-visual" aria-hidden="true">
+              <span class="node node-a">Plan</span><span class="node node-b">Search</span><span class="node node-c">Verify</span><span class="node node-d">Report</span>
+              <i class="line line-a"></i><i class="line line-b"></i><i class="line line-c"></i>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <div class="project-tags"><span>Data</span><span>Analytics</span></div>
+              <h3>Talent Intelligence Dashboard</h3>
+              <p>A structured analytics concept for exploring technical talent pools, skills, and company distributions.</p>
+              <span class="coming-soon">Case study coming soon</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <div class="project-tags"><span>Backend</span><span>API</span></div>
+              <h3>Developer API Project</h3>
+              <p>A production-minded backend project covering API design, validation, testing, and documentation.</p>
+              <span class="coming-soon">Build in progress</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell experience-section" id="experience">
+        <div class="section-label reveal">03 / Experience</div>
+        <div class="timeline reveal">
+          <article>
+            <div class="timeline-meta"><span>Present</span><span>Markham, Canada</span></div>
+            <div><h3>AI / Technical Recruiter</h3><p>Huawei Canada</p></div>
+            <p>Technical talent research, candidate engagement, and collaboration with engineering stakeholders.</p>
+          </article>
+          <article>
+            <div class="timeline-meta"><span>Graduate</span><span>Ontario, Canada</span></div>
+            <div><h3>Master of Engineering</h3><p>University of Guelph</p></div>
+            <p>Graduate engineering education with an evolving focus on software, data, and intelligent systems.</p>
+          </article>
+          <article>
+            <div class="timeline-meta"><span>Now</span><span>Independent</span></div>
+            <div><h3>Software & AI Builder</h3><p>Continuous learning</p></div>
+            <p>Building public projects to demonstrate engineering fundamentals and applied AI capabilities.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow"><span></span> Let’s connect</p>
+          <h2>Building the next chapter,<br />one useful system at a time.</h2>
+          <p>I’m interested in software engineering, data, and applied AI opportunities where curiosity and ownership matter.</p>
+        </div>
+        <div class="contact-links reveal">
+          <a href="https://www.linkedin.com/in/jian98" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>Connect professionally ↗</strong></a>
+          <a href="https://github.com/jiangjian9803-eng" target="_blank" rel="noreferrer"><span>GitHub</span><strong>Follow the build log ↗</strong></a>
+          <a href="mailto:jiangjiang9803@gmail.com"><span>Email</span><strong>Start a conversation ↗</strong></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Jian Jiang</span>
+      <span>Designed & built with intention.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

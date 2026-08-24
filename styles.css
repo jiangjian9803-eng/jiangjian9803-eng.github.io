@@ -67,8 +67,9 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .hero-meta i { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 5px rgba(102,138,89,.18); animation: status-pulse 2.2s ease-in-out infinite; }
 @keyframes status-pulse { 50% { box-shadow: 0 0 0 9px rgba(102,138,89,0); } }
 
-.hero-card { position: relative; overflow: hidden; min-height: 500px; border-radius: 36px; padding: 26px; color: var(--paper); background: radial-gradient(circle at 76% 18%, rgba(102,138,89,.46), transparent 34%), var(--ink); box-shadow: 0 35px 100px rgba(23,32,42,.2); transform: translateY(-309px) rotate(1.2deg); transition: transform .35s ease, box-shadow .35s ease; }
-.hero-card:hover { transform: translateY(-314px) rotate(0deg); box-shadow: 0 42px 120px rgba(7,17,31,.28); }
+.hero-card { position: relative; top: -125px; overflow: hidden; min-height: 500px; border-radius: 36px; padding: 26px; color: var(--paper); background: radial-gradient(circle at 76% 18%, rgba(102,138,89,.46), transparent 34%), var(--ink); box-shadow: 0 35px 100px rgba(23,32,42,.2); transform: rotate(1.2deg); transition: transform .35s ease, box-shadow .35s ease; }
+.hero-card.reveal.visible { transform: rotate(1.2deg); }
+.hero-card.reveal.visible:hover { transform: translateY(-5px) rotate(0deg); box-shadow: 0 42px 120px rgba(7,17,31,.28); }
 .hero-card::after { content: ""; position: absolute; width: 300px; height: 300px; right: -120px; top: 60px; border: 1px solid rgba(255,255,255,.15); border-radius: 50%; box-shadow: 0 0 0 48px rgba(255,255,255,.03), 0 0 0 96px rgba(255,255,255,.02); }
 .status-line { position: relative; z-index: 1; display: flex; gap: 9px; align-items: center; font-size: 12px; text-transform: uppercase; letter-spacing: .09em; color: rgba(244,241,235,.72); }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 5px rgba(43,217,196,.12); }
@@ -198,7 +199,8 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   nav { display: none; }
   .hero { grid-template-columns: 1fr; padding-block: 70px; }
   .hero-card { min-height: 420px; }
-  .hero-card { transform: none; }
+  .hero-card { top: 0; transform: none; }
+  .hero-card.reveal.visible { transform: none; }
   .proof-strip { grid-template-columns: 1fr 1fr; }
   .proof-strip div:nth-child(2) { border-right: 0; }
   .proof-strip div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }

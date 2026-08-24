@@ -67,7 +67,7 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .hero-meta i { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 5px rgba(102,138,89,.18); animation: status-pulse 2.2s ease-in-out infinite; }
 @keyframes status-pulse { 50% { box-shadow: 0 0 0 9px rgba(102,138,89,0); } }
 
-.hero-card { position: relative; top: -82px; overflow: hidden; min-height: 500px; border-radius: 36px; padding: 26px; color: var(--paper); background: radial-gradient(circle at 76% 18%, rgba(102,138,89,.46), transparent 34%), var(--ink); box-shadow: 0 35px 100px rgba(23,32,42,.2); transition: transform .35s ease, box-shadow .35s ease; }
+.hero-card { position: relative; top: -87px; overflow: hidden; min-height: 500px; border-radius: 36px; padding: 26px; color: var(--paper); background: radial-gradient(circle at 76% 18%, rgba(102,138,89,.46), transparent 34%), var(--ink); box-shadow: 0 35px 100px rgba(23,32,42,.2); transition: transform .35s ease, box-shadow .35s ease; }
 .hero-card.reveal.visible { transform: none; }
 .hero-card.reveal.visible:hover { transform: translateY(-5px); box-shadow: 0 42px 120px rgba(7,17,31,.28); }
 .hero-card::after { content: ""; position: absolute; width: 300px; height: 300px; right: -120px; top: 60px; border: 1px solid rgba(255,255,255,.15); border-radius: 50%; box-shadow: 0 0 0 48px rgba(255,255,255,.03), 0 0 0 96px rgba(255,255,255,.02); }

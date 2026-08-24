@@ -74,7 +74,7 @@ h1 em { position: relative; color: var(--blue); font-style: normal; }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 5px rgba(43,217,196,.12); }
 .portrait-wrap { position: absolute; top: 78px; left: 50%; width: 210px; height: 210px; transform: translateX(-50%); z-index: 1; }
 .portrait-wrap::before { content: ""; position: absolute; inset: -9px; border-radius: 50%; background: conic-gradient(var(--cyan), transparent 38%, var(--cyan)); animation: portrait-spin 10s linear infinite; }
-.portrait-wrap img { position: relative; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; border: 6px solid var(--ink); border-radius: 50%; background: var(--paper); z-index: 1; }
+.portrait-wrap img { position: relative; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; border: 6px solid var(--ink); border-radius: 50%; background: var(--paper); z-index: 1; }
 .portrait-orbit { position: absolute; inset: -22px; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; animation: portrait-spin 16s linear infinite reverse; }
 .portrait-orbit::after { content: ""; position: absolute; top: 25px; right: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 18px var(--cyan); }
 @keyframes portrait-spin { to { transform: rotate(360deg); } }

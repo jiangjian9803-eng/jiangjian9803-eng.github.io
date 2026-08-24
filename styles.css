@@ -178,7 +178,7 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .landscape-heading h2 { margin-top: 18px; font-size: clamp(46px, 6vw, 78px); line-height: .98; letter-spacing: -.065em; }
 .landscape-heading h2 em { color: #668a59; font-style: normal; }
 .landscape-intro p { margin: 0; color: var(--ink); font-size: 18px; line-height: 1.55; }
-.landscape-intro span { display: block; margin-top: 17px; color: var(--muted); font-size: 14px; line-height: 1.55; }
+.landscape-intro span { display: block; margin-top: 17px; color: var(--muted); font-size: 16px; line-height: 1.55; }
 .agent-regions { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .agent-region { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.66); }
 .agent-region header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 24px 26px; border-bottom: 1px solid var(--line); background: rgba(102,138,89,.08); }

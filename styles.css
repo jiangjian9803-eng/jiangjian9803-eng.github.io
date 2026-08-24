@@ -79,7 +79,7 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .portrait-orbit { position: absolute; inset: -22px; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; animation: portrait-spin 16s linear infinite reverse; }
 .portrait-orbit::after { content: ""; position: absolute; top: 25px; right: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 18px var(--cyan); }
 @keyframes portrait-spin { to { transform: rotate(360deg); } }
-.personal-labels { position: absolute; top: 307px; left: 24px; right: 24px; z-index: 2; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.personal-labels { position: absolute; top: 307px; left: 24px; right: 24px; z-index: 2; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
 .personal-labels span { padding: 6px 10px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: rgba(255,255,255,.05); color: var(--paper); font-size: 10px; font-weight: 600; letter-spacing: .04em; }
 .hero-card-copy { position: absolute; left: 28px; bottom: 104px; z-index: 1; }
 .hero-card-copy p { color: var(--cyan); margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: .12em; }

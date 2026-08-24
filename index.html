@@ -86,62 +86,59 @@
         <div class="section-shell lab-shell">
           <div class="lab-heading reveal">
             <div>
-              <div class="section-label light-label">Live / AI Lab</div>
-              <h2>Don’t just read about it.<br /><em>Try the thinking loop.</em></h2>
+              <div class="section-label light-label">Engineering portfolio</div>
+              <h2>Three disciplines.<br /><em>Evidence at every layer.</em></h2>
             </div>
-            <p>Two browser-based prototypes that make agent orchestration and classification tradeoffs visible. No data leaves your browser.</p>
+            <p>Architecture, data, evaluation, implementation, and source links—organized around the three engineering paths I am actively building toward.</p>
           </div>
 
-          <div class="lab-grid">
-            <article class="agent-console reveal">
-              <div class="console-topbar">
-                <div class="traffic-lights"><i></i><i></i><i></i></div>
-                <span>agent_lab.py</span>
-                <span class="prototype-badge">Interactive prototype</span>
+          <div class="evidence-grid">
+            <article class="evidence-card reveal">
+              <div class="evidence-topline"><span>01 / AI Agent</span><i>Prototype</i></div>
+              <h3>Agentic Research Assistant</h3>
+              <p>A reviewable research workflow designed to break an ambiguous goal into traceable, evidence-backed steps.</p>
+              <div class="architecture-flow" aria-label="Agent architecture">
+                <span>Goal</span><b>→</b><span>Plan</span><b>→</b><span>Retrieve</span><b>→</b><span>Verify</span><b>→</b><span>Report</span>
               </div>
-              <div class="console-body">
-                <div class="console-intro">
-                  <p>AI Coding Agent</p>
-                  <h3>Turn a software goal into a reviewable workflow.</h3>
-                </div>
-                <label for="agent-task">Give the agent a task</label>
-                <div class="agent-input-row">
-                  <input id="agent-task" value="Add semantic search to a recruiting application" maxlength="100" />
-                  <button id="run-agent" type="button">Run agent <span>▶</span></button>
-                </div>
-                <div class="agent-progress"><span id="agent-progress-bar"></span></div>
-                <div class="agent-steps" id="agent-steps">
-                  <div data-step="plan"><span>01</span><strong>Plan</strong><small>Waiting</small></div>
-                  <div data-step="retrieve"><span>02</span><strong>Retrieve</strong><small>Waiting</small></div>
-                  <div data-step="evaluate"><span>03</span><strong>Evaluate</strong><small>Waiting</small></div>
-                  <div data-step="synthesize"><span>04</span><strong>Synthesize</strong><small>Waiting</small></div>
-                </div>
-                <div class="agent-output" id="agent-output" aria-live="polite">
-                  <span>$</span> Ready. Run the workflow to inspect each stage.
-                </div>
+              <dl class="evidence-list">
+                <div><dt>Stack</dt><dd>Python · LLM orchestration · RAG · evaluations</dd></div>
+                <div><dt>Evidence</dt><dd>Inspectable stages, citations, and human review points</dd></div>
+              </dl>
+              <div class="evidence-links">
+                <a href="https://github.com/jiangjian9803-eng" target="_blank" rel="noreferrer">GitHub ↗</a>
+                <span>Demo in development</span>
               </div>
             </article>
 
-            <article class="ml-playground reveal">
-              <div class="playground-heading">
-                <div><span>ML Playground</span><h3>Classification is a tradeoff.</h3></div>
-                <div class="live-indicator"><i></i> Live</div>
+            <article class="evidence-card reveal">
+              <div class="evidence-topline"><span>02 / Machine Learning</span><i>Experiment</i></div>
+              <h3>Candidate Matching Classifier</h3>
+              <p>A transparent classification experiment focused on how decision thresholds change model behavior.</p>
+              <div class="ml-evidence">
+                <div><span>Dataset</span><strong>Synthetic candidate profiles</strong></div>
+                <div><span>Model</span><strong>Binary classification baseline</strong></div>
+                <div><span>Metrics</span><strong>Precision · Recall · F1</strong></div>
+                <div><span>Result</span><strong>Threshold trade-offs made visible</strong></div>
               </div>
-              <p>Adjust the decision threshold to see how precision and recall respond on a synthetic candidate-matching dataset.</p>
-              <div class="threshold-control">
-                <label for="threshold">Decision threshold <output id="threshold-value">0.55</output></label>
-                <input id="threshold" type="range" min="20" max="85" value="55" />
-                <div class="range-labels"><span>More recall</span><span>More precision</span></div>
+              <div class="evidence-links">
+                <a href="https://github.com/jiangjian9803-eng/jiangjian9803-eng.github.io" target="_blank" rel="noreferrer">View source ↗</a>
+                <span>Uses non-production data</span>
               </div>
-              <div class="metric-grid">
-                <div><span>Precision</span><strong id="precision-value">78%</strong><i><b id="precision-bar"></b></i></div>
-                <div><span>Recall</span><strong id="recall-value">81%</strong><i><b id="recall-bar"></b></i></div>
-                <div><span>F1 score</span><strong id="f1-value">79%</strong><i><b id="f1-bar"></b></i></div>
-              </div>
-              <div class="confusion-matrix" aria-label="Confusion matrix">
-                <div class="matrix-label"></div><div class="matrix-label">Predicted +</div><div class="matrix-label">Predicted −</div>
-                <div class="matrix-label side">Actual +</div><div class="matrix-cell positive"><strong id="tp-value">34</strong><span>True positive</span></div><div class="matrix-cell"><strong id="fn-value">8</strong><span>False negative</span></div>
-                <div class="matrix-label side">Actual −</div><div class="matrix-cell"><strong id="fp-value">10</strong><span>False positive</span></div><div class="matrix-cell positive"><strong id="tn-value">48</strong><span>True negative</span></div>
+            </article>
+
+            <article class="evidence-card reveal">
+              <div class="evidence-topline"><span>03 / Software Engineering</span><i>Live</i></div>
+              <h3>Personal Portfolio Platform</h3>
+              <p>A responsive, production-deployed portfolio built as a maintainable software product rather than a static profile.</p>
+              <dl class="evidence-list">
+                <div><dt>Stack</dt><dd>Next.js · JavaScript · CSS · GitHub Actions</dd></div>
+                <div><dt>Core</dt><dd>Responsive UI, interaction design, accessibility, static export</dd></div>
+                <div><dt>Delivery</dt><dd>Automated build and deployment to GitHub Pages</dd></div>
+              </dl>
+              <div class="delivery-strip"><span>Code</span><b>→</b><span>Build</span><b>→</b><span>Verify</span><b>→</b><span>Deploy</span></div>
+              <div class="evidence-links">
+                <a href="https://github.com/jiangjian9803-eng/jiangjian9803-eng.github.io" target="_blank" rel="noreferrer">GitHub ↗</a>
+                <a href="https://jiangjian9803-eng.github.io/" target="_blank" rel="noreferrer">Live demo ↗</a>
               </div>
             </article>
           </div>

@@ -41,6 +41,9 @@ nav a:hover { color: var(--ink); }
 .nav-cta:focus-visible { outline: 3px solid rgba(131,169,116,.38); outline-offset: 3px; }
 .header-actions { display: flex; align-items: center; gap: 10px; }
 .header-actions .nav-cta { min-width: 100px; text-align: center; }
+.header-link { padding: 10px 8px; color: var(--muted); font-size: 13px; font-weight: 750; transition: color .18s ease, transform .18s ease; }
+.header-link:hover { color: var(--ink); transform: translateY(-1px); }
+.header-link:focus-visible { outline: 2px solid rgba(131,169,116,.38); outline-offset: 3px; border-radius: 8px; }
 
 .hero { position: relative; min-height: 760px; display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 76px; padding-block: 82px 104px; }
 .hero-copy { position: relative; z-index: 2; }
@@ -51,15 +54,12 @@ nav a:hover { color: var(--ink); }
 .hero-profile-heading h1 { max-width: none; margin: 0; font-size: clamp(24px, 2.35vw, 34px); line-height: 1.08; letter-spacing: -.042em; white-space: nowrap; }
 .hero-profile-heading h1 span, .hero-profile-heading h1 em { display: inline; }
 .hero-profile-heading h1 em { margin: 0; }
-.guiding-questions { height: 444px; display: flex; flex-direction: column; justify-content: center; max-width: 720px; }
-.questions-heading { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: start; margin-bottom: 26px; }
-.questions-heading > span { padding-top: 4px; color: #83a974; font-size: 11px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
-.questions-heading h2 { font-size: 25px; line-height: 1.12; letter-spacing: -.04em; }
-.guiding-questions ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
-.guiding-questions li { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); }
-.guiding-questions li > span { color: var(--blue); font-size: 11px; font-weight: 850; letter-spacing: .1em; }
-.guiding-questions li p { margin: 0; font: 700 18px/1.35 "Avenir Next", Inter, sans-serif; letter-spacing: -.02em; }
-.guiding-questions li small { display: block; max-width: 520px; margin-top: 7px; color: var(--muted); font-size: 11px; line-height: 1.55; }
+.hero-identity { height: 444px; display: flex; flex-direction: column; justify-content: center; max-width: 720px; border-bottom: 1px solid var(--line); }
+.hero-identity > span { color: #83a974; font-size: 11px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.hero-identity h2 { max-width: 650px; margin-top: 18px; font-size: clamp(36px, 4.1vw, 57px); line-height: 1.04; letter-spacing: -.055em; }
+.hero-identity > p { max-width: 620px; margin: 24px 0 0; color: var(--muted); font-size: 16px; line-height: 1.65; }
+.identity-focus { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.identity-focus span { padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: rgba(255,255,255,.38); font-size: 10px; font-weight: 700; letter-spacing: .035em; }
 .eyebrow { display: flex; align-items: center; gap: 10px; text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: .14em; color: var(--muted); }
 .eyebrow span { width: 26px; height: 2px; background: var(--orange); }
 h1, h2, h3 { font-family: "Manrope", sans-serif; margin: 0; }
@@ -224,6 +224,14 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .about-copy h2, .section-heading h2, .contact-copy h2 { font-size: clamp(40px, 5vw, 70px); line-height: 1.05; letter-spacing: -.06em; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 42px; }
 .about-grid p, .contact-copy > p { color: var(--muted); line-height: 1.75; font-size: 17px; margin: 0; }
+.philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 42px; margin-top: 58px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.philosophy-grid article { padding: 30px 0 28px; }
+.philosophy-grid article + article { padding-left: 42px; border-left: 1px solid var(--line); }
+.philosophy-grid span { color: #83a974; font-size: 10px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.philosophy-grid h3 { margin-top: 11px; font-size: 22px; line-height: 1.2; letter-spacing: -.035em; }
+.philosophy-grid p { margin: 13px 0 19px; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.philosophy-grid strong { color: var(--ink); font-size: 10px; line-height: 1.7; letter-spacing: .02em; }
+.philosophy-grid i { padding-inline: 3px; color: var(--blue); font-style: normal; }
 
 #work { padding-block: 130px 150px; }
 .section-heading { display: grid; grid-template-columns: 240px 1fr; gap: 70px; align-items: end; margin-bottom: 54px; }
@@ -274,7 +282,7 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .hero-card { top: 0; transform: none; }
   .hero-card.reveal.visible { transform: none; }
   .hero-profile-heading { top: 12px; }
-  .guiding-questions { height: auto; padding-block: 36px 12px; }
+  .hero-identity { height: auto; padding-block: 48px 36px; }
   .proof-strip { grid-template-columns: 1fr 1fr; }
   .proof-strip div:nth-child(2) { border-right: 0; }
   .proof-strip div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
@@ -291,19 +299,20 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
 @media (max-width: 620px) {
   .site-header, .section-shell, footer { width: min(100% - 28px, 1180px); }
   .nav-cta { padding: 10px 13px; }
+  .header-actions .header-link { display: none; }
   h1 { font-size: 52px; }
   .hero-profile-heading h1 { font-size: clamp(15px, 4.5vw, 24px); }
   .hero { min-height: auto; gap: 45px; }
   .hero::before { display: none; }
   .hero-meta { align-items: flex-start; flex-direction: column; gap: 10px; }
   .text-link { min-height: 42px; }
-  .questions-heading, .guiding-questions li { grid-template-columns: 1fr; gap: 8px; }
-  .questions-heading { margin-bottom: 20px; }
-  .guiding-questions li { padding: 16px 0; }
+  .hero-identity h2 { font-size: 40px; }
   .profile-facts { grid-template-columns: 1fr; }
   .profile-facts div, .profile-facts div:nth-child(2n) { border-right: 0; border-bottom: 1px solid var(--line); }
   .profile-facts div:last-child { border-bottom: 0; }
   .about-grid, .project-grid { grid-template-columns: 1fr; }
+  .philosophy-grid { grid-template-columns: 1fr; gap: 0; }
+  .philosophy-grid article + article { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
   .project-featured { grid-column: 1; grid-template-columns: 1fr; }
   .project-visual { min-height: 310px; }
   .timeline article { grid-template-columns: 1fr; }

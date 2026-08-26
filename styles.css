@@ -51,7 +51,15 @@ nav a:hover { color: var(--ink); }
 .hero-profile-heading h1 { max-width: none; margin: 0; font-size: clamp(24px, 2.35vw, 34px); line-height: 1.08; letter-spacing: -.042em; white-space: nowrap; }
 .hero-profile-heading h1 span, .hero-profile-heading h1 em { display: inline; }
 .hero-profile-heading h1 em { margin: 0; }
-.hero-heading-placeholder { height: 300px; }
+.guiding-questions { height: 444px; display: flex; flex-direction: column; justify-content: center; max-width: 720px; }
+.questions-heading { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: start; margin-bottom: 26px; }
+.questions-heading > span { padding-top: 4px; color: var(--blue); font-size: 10px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+.questions-heading h2 { font-size: 25px; line-height: 1.12; letter-spacing: -.04em; }
+.guiding-questions ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.guiding-questions li { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.guiding-questions li > span { color: var(--blue); font-size: 11px; font-weight: 850; letter-spacing: .1em; }
+.guiding-questions li p { margin: 0; font: 700 18px/1.35 "Avenir Next", Inter, sans-serif; letter-spacing: -.02em; }
+.guiding-questions li small { display: block; max-width: 520px; margin-top: 7px; color: var(--muted); font-size: 11px; line-height: 1.55; }
 .eyebrow { display: flex; align-items: center; gap: 10px; text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: .14em; color: var(--muted); }
 .eyebrow span { width: 26px; height: 2px; background: var(--orange); }
 h1, h2, h3 { font-family: "Manrope", sans-serif; margin: 0; }
@@ -59,7 +67,6 @@ h1, h2, h3 { font-family: "Avenir Next", Inter, -apple-system, sans-serif; margi
 h1 { max-width: 760px; font-size: clamp(48px, 5.8vw, 78px); line-height: 1.04; letter-spacing: -.052em; font-weight: 700; }
 h1 span, h1 em { display: block; }
 h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: normal; }
-.hero-intro { max-width: 670px; font-size: 17px; line-height: 1.72; color: var(--muted); margin: 28px 0; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 64px; }
 .profile-facts { max-width: 720px; display: grid; grid-template-columns: 1fr 1fr; margin: -5px 0 28px; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: rgba(255,255,255,.55); backdrop-filter: blur(14px); }
 .profile-facts div { padding: 14px 16px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -267,7 +274,7 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .hero-card { top: 0; transform: none; }
   .hero-card.reveal.visible { transform: none; }
   .hero-profile-heading { top: 12px; }
-  .hero-heading-placeholder { display: none; }
+  .guiding-questions { height: auto; padding-block: 36px 12px; }
   .proof-strip { grid-template-columns: 1fr 1fr; }
   .proof-strip div:nth-child(2) { border-right: 0; }
   .proof-strip div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
@@ -290,6 +297,9 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .hero::before { display: none; }
   .hero-meta { align-items: flex-start; flex-direction: column; gap: 10px; }
   .text-link { min-height: 42px; }
+  .questions-heading, .guiding-questions li { grid-template-columns: 1fr; gap: 8px; }
+  .questions-heading { margin-bottom: 20px; }
+  .guiding-questions li { padding: 16px 0; }
   .profile-facts { grid-template-columns: 1fr; }
   .profile-facts div, .profile-facts div:nth-child(2n) { border-right: 0; border-bottom: 1px solid var(--line); }
   .profile-facts div:last-child { border-bottom: 0; }

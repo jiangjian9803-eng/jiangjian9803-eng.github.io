@@ -60,7 +60,7 @@ h1 { max-width: 760px; font-size: clamp(48px, 5.8vw, 78px); line-height: 1.04; l
 h1 span, h1 em { display: block; }
 h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: normal; }
 .hero-intro { max-width: 670px; font-size: 17px; line-height: 1.72; color: var(--muted); margin: 28px 0; }
-.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
 .profile-facts { max-width: 720px; display: grid; grid-template-columns: 1fr 1fr; margin: -5px 0 28px; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: rgba(255,255,255,.55); backdrop-filter: blur(14px); }
 .profile-facts div { padding: 14px 16px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .profile-facts div:nth-child(2n) { border-right: 0; }

@@ -36,6 +36,8 @@ nav { display: flex; gap: 34px; font-size: 14px; font-weight: 600; }
 nav a { color: var(--muted); transition: color .2s ease; }
 nav a:hover { color: var(--ink); }
 .nav-cta { padding: 11px 17px; border: 1px solid var(--line); border-radius: 999px; font-weight: 700; font-size: 14px; background: rgba(255,255,255,.5); }
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.header-actions .nav-cta { min-width: 100px; text-align: center; }
 
 .hero { position: relative; min-height: 760px; display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 76px; padding-block: 82px 104px; }
 .hero-copy { position: relative; z-index: 2; }

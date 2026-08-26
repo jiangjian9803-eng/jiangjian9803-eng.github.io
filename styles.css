@@ -53,7 +53,7 @@ nav a:hover { color: var(--ink); }
 .hero-profile-heading h1 em { margin: 0; }
 .guiding-questions { height: 444px; display: flex; flex-direction: column; justify-content: center; max-width: 720px; }
 .questions-heading { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: start; margin-bottom: 26px; }
-.questions-heading > span { padding-top: 4px; color: var(--blue); font-size: 10px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+.questions-heading > span { padding-top: 4px; color: #83a974; font-size: 11px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
 .questions-heading h2 { font-size: 25px; line-height: 1.12; letter-spacing: -.04em; }
 .guiding-questions ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .guiding-questions li { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); }

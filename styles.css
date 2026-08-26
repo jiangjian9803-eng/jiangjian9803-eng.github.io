@@ -40,7 +40,7 @@ nav a:hover { color: var(--ink); }
 .hero { position: relative; min-height: 760px; display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 76px; padding-block: 82px 104px; }
 .hero-copy { position: relative; z-index: 2; }
 .hero-profile-column { position: relative; }
-.hero-profile-heading { position: absolute; top: 36px; left: 50%; width: 100%; z-index: 3; transform: translateX(-50%); text-align: center; }
+.hero-profile-heading { position: absolute; top: 16px; left: 50%; width: 100%; z-index: 3; transform: translateX(-50%); text-align: center; }
 .hero-profile-heading .eyebrow { justify-content: center; font-size: 10px; letter-spacing: .12em; }
 .hero-profile-heading .eyebrow span { width: 22px; }
 .hero-profile-heading h1 { max-width: none; margin: 0; font-size: clamp(24px, 2.35vw, 34px); line-height: 1.08; letter-spacing: -.042em; white-space: nowrap; }
@@ -261,7 +261,7 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .hero-card { min-height: 602px; }
   .hero-card { top: 0; transform: none; }
   .hero-card.reveal.visible { transform: none; }
-  .hero-profile-heading { top: 25px; }
+  .hero-profile-heading { top: 12px; }
   .hero-heading-placeholder { display: none; }
   .proof-strip { grid-template-columns: 1fr 1fr; }
   .proof-strip div:nth-child(2) { border-right: 0; }

@@ -103,7 +103,7 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .personal-labels { position: absolute; top: 330px; left: 24px; right: 24px; z-index: 2; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
 .personal-labels span { padding: 6px 10px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: rgba(255,255,255,.05); color: var(--paper); font-size: 10px; font-weight: 600; letter-spacing: .04em; }
 .hero-card-copy { position: absolute; left: 28px; bottom: 104px; z-index: 1; }
-.hero-card-copy p { color: var(--cyan); margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: .12em; }
+.hero-card-copy p { color: #dbe8d5; margin: 0 0 10px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; }
 .hero-card-copy h2 { font-size: 28px; line-height: 1.2; letter-spacing: -.04em; }
 .mini-stack { position: absolute; left: 26px; right: 26px; bottom: 26px; display: flex; flex-wrap: wrap; gap: 8px; }
 .mini-stack span { padding: 8px 11px; border: 1px solid rgba(244,241,235,.13); border-radius: 999px; font-size: 12px; color: rgba(244,241,235,.82); background: rgba(244,241,235,.05); }

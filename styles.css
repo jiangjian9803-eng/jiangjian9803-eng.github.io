@@ -307,6 +307,9 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .learning-layers i:nth-child(2) { height: 60px; animation-delay: .3s; }.learning-layers i:nth-child(3) { height: 48px; animation-delay: .6s; }.learning-layers b { color: #2b9e91; font: 700 8px monospace; }
 .learning-loop { display: flex; align-items: center; justify-content: center; gap: 6px; height: 68px; margin-top: 12px; color: #b46a2c; font: 700 9px monospace; }
 .learning-loop b, .learning-loop strong { padding: 8px 6px; border: 1px solid rgba(180,106,44,.4); border-radius: 7px; }.learning-loop i { animation: loop-arrow 1.4s ease-in-out infinite; }
+.research-roadmap { margin-top: 18px; padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: rgba(13,24,40,.035); }
+.research-roadmap-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }.research-roadmap-head span { color: #668a59; font: 850 9px monospace; letter-spacing: .1em; }.research-roadmap-head strong { color: var(--ink); font-size: 12px; }
+.research-roadmap-flow { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr; gap: 8px; align-items: center; }.research-roadmap-flow > div { min-height: 76px; padding: 11px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.5); }.research-roadmap-flow b { display: block; color: var(--blue); font: 750 9px monospace; }.research-roadmap-flow strong { display: block; margin-top: 13px; font-size: 12px; }.research-roadmap-flow small { display: block; margin-top: 5px; color: var(--muted); font-size: 10px; line-height: 1.35; }.research-roadmap-flow > i { color: #9aabba; font-style: normal; }
 @keyframes pressure-sweep { to { stroke-dashoffset: 0; } }
 @keyframes event-pulse { 0%, 100% { opacity: .35; transform: scale(.75); transform-origin: 420px 18px; } 50% { opacity: 1; transform: scale(1.25); transform-origin: 420px 18px; } }
 @keyframes signal-flow { to { stroke-dashoffset: -16; } }
@@ -434,6 +437,8 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .method-map-columns { display: none; }
   .method-map-row .method-io, .method-map-row .method-flow { grid-column: 2; }
   .method-map-cn { grid-template-columns: 54px 1fr; }
+  .research-roadmap-flow { grid-template-columns: 1fr; }
+  .research-roadmap-flow > i { display: none; }
   .feasibility-roadmap { align-items: flex-start; flex-direction: column; }
   .feasibility-roadmap i { display: none; }
   .research-plan-heading { align-items: center; }

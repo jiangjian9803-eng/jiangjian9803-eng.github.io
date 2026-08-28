@@ -238,7 +238,7 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 #research.split-section { display: block; }
 #research.split-section > .section-label { width: 100%; margin-bottom: 14px; text-align: center; }
 .research-story { width: 100%; min-width: 0; margin-inline: auto; }
-.research-heading { max-width: 1040px; margin-inline: auto; text-align: center; }
+.research-heading { max-width: 1550px; margin-inline: auto; text-align: center; }
 .research-section-label { display: block; width: 100%; margin-bottom: 14px; font-size: 28px; letter-spacing: 0; text-align: center; text-transform: none; transform: translateY(-44px); }
 .research-architecture header span, .innovation-heading span { color: #668a59; font-size: 10px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
 .research-heading h2 { margin-top: 15px; font-size: clamp(42px, 5.4vw, 72px); line-height: 1.02; letter-spacing: -.062em; text-align: left; }

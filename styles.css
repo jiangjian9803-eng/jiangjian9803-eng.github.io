@@ -278,9 +278,26 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .physics-demo-footer i { width: 24px; height: 1px; background: var(--blue); opacity: .65; }
 .physics-demo-footer b { color: var(--blue); }
 .physics-demo-footer strong { margin-left: auto; color: #b46a2c; }
+.learning-modes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
+.learning-mode { position: relative; min-height: 190px; overflow: hidden; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.42); }
+.learning-mode-code { color: #668a59; font: 850 10px/1 monospace; letter-spacing: .12em; }
+.learning-mode h4 { margin-top: 12px; font-size: 15px; letter-spacing: -.025em; }
+.learning-mode p { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.learning-orbit { position: relative; width: 118px; height: 68px; margin: 12px auto 0; border: 1px dashed rgba(53,109,255,.4); border-radius: 50%; }
+.learning-orbit i { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); animation: orbit-dot 2.4s linear infinite; }
+.learning-orbit i:nth-child(1) { left: 14px; top: 29px; }.learning-orbit i:nth-child(2) { left: 54px; top: 2px; animation-delay: .8s; }.learning-orbit i:nth-child(3) { right: 14px; top: 29px; animation-delay: 1.6s; }
+.learning-orbit b { position: absolute; inset: 25px 0 auto; color: var(--ink); font: 700 8px/1.1 monospace; text-align: center; }
+.learning-layers { display: flex; align-items: center; justify-content: center; gap: 10px; height: 68px; margin-top: 12px; }
+.learning-layers i { width: 27px; height: 48px; border: 1px solid #2bd9c4; border-radius: 9px; background: repeating-linear-gradient(180deg, rgba(43,217,196,.18) 0 5px, transparent 5px 10px); animation: layer-glow 1.8s ease-in-out infinite; }
+.learning-layers i:nth-child(2) { height: 60px; animation-delay: .3s; }.learning-layers i:nth-child(3) { height: 48px; animation-delay: .6s; }.learning-layers b { color: #2b9e91; font: 700 8px monospace; }
+.learning-loop { display: flex; align-items: center; justify-content: center; gap: 6px; height: 68px; margin-top: 12px; color: #b46a2c; font: 700 9px monospace; }
+.learning-loop b, .learning-loop strong { padding: 8px 6px; border: 1px solid rgba(180,106,44,.4); border-radius: 7px; }.learning-loop i { animation: loop-arrow 1.4s ease-in-out infinite; }
 @keyframes pressure-sweep { to { stroke-dashoffset: 0; } }
 @keyframes event-pulse { 0%, 100% { opacity: .35; transform: scale(.75); transform-origin: 420px 57px; } 50% { opacity: 1; transform: scale(1.25); transform-origin: 420px 57px; } }
 @keyframes signal-flow { to { stroke-dashoffset: -16; } }
+@keyframes orbit-dot { 0% { transform: translate(0,0); } 50% { transform: translate(40px,-27px); } 100% { transform: translate(80px,0); } }
+@keyframes layer-glow { 50% { box-shadow: 0 0 14px rgba(43,217,196,.35); transform: translateY(-3px); } }
+@keyframes loop-arrow { 50% { opacity: .35; transform: translateX(3px); } }
 .research-meta { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 30px; }
 .research-meta span { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: rgba(255,255,255,.45); font-size: 10px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
 .research-architecture { overflow: hidden; width: 100%; margin: 48px auto 0; border: 1px solid var(--line); border-radius: 24px; background: #0d1828; color: var(--paper); box-shadow: 0 24px 60px rgba(23,32,42,.12); }
@@ -397,6 +414,7 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .research-flow > i { display: none; }
   .research-flow div:last-child { grid-column: 1 / -1; }
   .physics-demo-grid { grid-template-columns: 1fr; }
+  .learning-modes { grid-template-columns: 1fr; }
   .feasibility-roadmap { align-items: flex-start; flex-direction: column; }
   .feasibility-roadmap i { display: none; }
   .research-plan-heading { align-items: center; }

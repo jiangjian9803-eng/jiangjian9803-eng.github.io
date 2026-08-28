@@ -234,7 +234,13 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .philosophy-grid i { padding-inline: 3px; color: var(--blue); font-style: normal; }
 
 .research-section { padding: 30px 0 150px; }
-#research { scroll-margin-top: 84px; }
+#research,
+#experience,
+#education,
+#current-focus,
+#contact,
+#work,
+#lab { scroll-margin-top: 84px; }
 #research.split-section { display: block; }
 #research.split-section > .section-label { width: 100%; margin-bottom: 14px; text-align: center; }
 .research-story { width: 100%; min-width: 0; margin-inline: auto; }

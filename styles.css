@@ -279,6 +279,20 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .physics-demo-footer i { width: 24px; height: 1px; background: var(--blue); opacity: .65; }
 .physics-demo-footer b { color: var(--blue); }
 .physics-demo-footer strong { margin-left: auto; color: #b46a2c; }
+.method-map { margin-top: 18px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.4); overflow: hidden; }
+.method-map-head { display: flex; justify-content: space-between; padding: 13px 16px; border-bottom: 1px solid var(--line); }
+.method-map-head span, .method-map-head strong, .method-map-columns { color: var(--muted); font: 700 9px monospace; letter-spacing: .1em; text-transform: uppercase; }
+.method-map-head strong { color: var(--ink); letter-spacing: .04em; text-transform: none; }
+.method-map-row { display: grid; grid-template-columns: 72px 1.15fr 1.25fr 160px; gap: 14px; align-items: center; min-height: 70px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.method-map-columns { min-height: 30px; padding-block: 8px; background: rgba(13,24,40,.035); }
+.method-map-row > div b { display: block; color: var(--ink); font-size: 12px; }
+.method-map-row small { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; line-height: 1.4; }
+.method-code { font: 850 18px monospace; letter-spacing: .04em; }.method-code.ml { color: var(--blue); }.method-code.dl { color: #2b9e91; }.method-code.rl { color: #b46a2c; }
+.method-io { color: var(--muted); font: 11px/1.45 monospace; }
+.method-flow { display: flex; align-items: center; gap: 8px; }.method-flow i { width: 10px; height: 10px; border-radius: 50%; animation: method-pulse 1.6s ease-in-out infinite; }.method-flow i:nth-child(2) { animation-delay: .25s; }.method-flow i:nth-child(3) { animation-delay: .5s; }.method-flow span { color: var(--muted); font-size: 18px; }
+.ml-flow i { background: var(--blue); }.dl-flow i { background: #2bd9c4; }.rl-flow i { background: #b46a2c; }
+.method-map-cn { display: grid; grid-template-columns: 72px 1fr; gap: 14px; padding: 14px 16px 16px; background: rgba(53,109,255,.035); }.method-map-cn > span { color: #668a59; font: 850 9px monospace; letter-spacing: .1em; text-transform: uppercase; }.method-map-cn p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.7; }.method-map-cn b { color: var(--ink); }
+@keyframes method-pulse { 0%, 100% { opacity: .3; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.25); } }
 .learning-modes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
 .learning-mode { position: relative; min-height: 190px; overflow: hidden; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.42); }
 .learning-mode-code { color: #668a59; font: 850 10px/1 monospace; letter-spacing: .12em; }
@@ -416,6 +430,10 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .research-flow div:last-child { grid-column: 1 / -1; }
   .physics-demo-grid { grid-template-columns: 1fr; }
   .learning-modes { grid-template-columns: 1fr; }
+  .method-map-row { grid-template-columns: 54px 1fr; }
+  .method-map-columns { display: none; }
+  .method-map-row .method-io, .method-map-row .method-flow { grid-column: 2; }
+  .method-map-cn { grid-template-columns: 54px 1fr; }
   .feasibility-roadmap { align-items: flex-start; flex-direction: column; }
   .feasibility-roadmap i { display: none; }
   .research-plan-heading { align-items: center; }

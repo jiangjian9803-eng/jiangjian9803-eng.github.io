@@ -237,6 +237,14 @@
               </div>
               <div class="physics-demo-footer"><span>event trigger</span><i></i><b>temporal DL</b><i></i><strong>roughness: elevated</strong></div>
             </div>
+            <div class="method-map" aria-label="Bilingual ML DL RL application map">
+              <div class="method-map-head"><span>METHOD LAYER</span><strong>From sensing to action</strong></div>
+              <div class="method-map-row method-map-columns"><b>METHOD</b><b>ROLE IN THIS RESEARCH</b><b>INPUT → OUTPUT</b><b>动态链路</b></div>
+              <div class="method-map-row"><strong class="method-code ml">ML</strong><div><b>Feature-based baseline</b><small>Engineered signal features identify pothole impacts.</small></div><div class="method-io">Pressure peaks · RMS · spectral energy → class / severity</div><div class="method-flow ml-flow"><i></i><i></i><i></i><span>→</span></div></div>
+              <div class="method-map-row"><strong class="method-code dl">DL</strong><div><b>Temporal representation</b><small>Deep models learn patterns from continuous waveforms.</small></div><div class="method-io">Raw sequence / window → detection · type · score</div><div class="method-flow dl-flow"><i></i><i></i><i></i><span>→</span></div></div>
+              <div class="method-map-row"><strong class="method-code rl">RL</strong><div><b>Adaptive decision policy</b><small>Actions are optimized from state and feedback.</small></div><div class="method-io">Road state · load · speed → slow · inspect · maintain</div><div class="method-flow rl-flow"><i></i><i></i><i></i><span>↺</span></div></div>
+              <div class="method-map-cn"><span>中文说明</span><p><b>ML 机器学习：</b>用人工设计的压力峰值、峰峰值、RMS、频域能量和持续时间等特征，识别坑洼冲击与路况严重度。<br /><b>DL 深度学习：</b>从原始压力序列或滑动窗口中自动学习复杂时序模式，实现坑洼检测、类型识别和严重度评分。<br /><b>RL 强化学习：</b>结合路况、载荷、速度与历史事件，学习减速、检查、维护或继续运行等动作策略。</p></div>
+            </div>
             <div class="learning-modes" aria-label="Animated machine learning modes">
               <article class="learning-mode learning-mode-ml"><span class="learning-mode-code">ML</span><h4>Feature-based classification</h4><div class="learning-orbit"><i></i><i></i><i></i><b>road<br />class</b></div><p>Engineered signal features → interpretable class.</p></article>
               <article class="learning-mode learning-mode-dl"><span class="learning-mode-code">DL</span><h4>Temporal representation</h4><div class="learning-layers"><i></i><i></i><i></i><b>severity</b></div><p>Pressure sequence → learned latent pattern.</p></article>

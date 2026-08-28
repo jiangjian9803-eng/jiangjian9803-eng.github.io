@@ -233,6 +233,62 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .philosophy-grid strong { color: var(--ink); font-size: 10px; line-height: 1.7; letter-spacing: .02em; }
 .philosophy-grid i { padding-inline: 3px; color: var(--blue); font-style: normal; }
 
+.research-story { min-width: 0; }
+.research-heading { max-width: 900px; }
+.research-kicker, .research-architecture header span, .innovation-heading span { color: #668a59; font-size: 10px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+.research-heading h2 { margin-top: 15px; font-size: clamp(42px, 5.4vw, 72px); line-height: 1.02; letter-spacing: -.062em; }
+.research-heading > p { max-width: 820px; margin: 28px 0 0; color: var(--muted); font-size: 18px; line-height: 1.7; }
+.research-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; }
+.research-meta span { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: rgba(255,255,255,.45); font-size: 10px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+.research-architecture { overflow: hidden; margin-top: 48px; border: 1px solid var(--line); border-radius: 24px; background: #0d1828; color: var(--paper); box-shadow: 0 24px 60px rgba(23,32,42,.12); }
+.research-architecture header { display: flex; justify-content: space-between; align-items: end; gap: 30px; padding: 26px 28px; border-bottom: 1px solid rgba(255,255,255,.1); }
+.research-architecture header span { color: var(--cyan); }
+.research-architecture h3 { margin-top: 8px; font-size: 25px; letter-spacing: -.035em; }
+.research-architecture header strong { color: #91a4ba; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+.research-flow { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr; gap: 10px; align-items: center; padding: 30px 26px 32px; }
+.research-flow div { min-height: 124px; padding: 15px; border: 1px solid rgba(255,255,255,.1); border-radius: 14px; background: rgba(255,255,255,.045); }
+.research-flow b, .research-flow span, .research-flow small { display: block; }
+.research-flow b { color: var(--cyan); font: 750 10px/1 monospace; }
+.research-flow span { margin-top: 18px; font-size: 13px; font-weight: 750; line-height: 1.25; }
+.research-flow small { margin-top: 8px; color: #91a4ba; font-size: 10px; line-height: 1.4; }
+.research-flow > i { color: #55708e; font-style: normal; font-size: 15px; }
+.innovation-heading { display: flex; justify-content: space-between; align-items: end; gap: 25px; margin-top: 56px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.innovation-heading h3 { font-size: 25px; letter-spacing: -.035em; }
+.innovation-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.innovation-grid article { min-height: 210px; padding: 28px 28px 30px 0; border-bottom: 1px solid var(--line); }
+.innovation-grid article:nth-child(even) { padding-left: 28px; border-left: 1px solid var(--line); }
+.innovation-grid b { color: var(--blue); font: 750 11px/1 monospace; }
+.innovation-grid h4 { margin-top: 27px; font-size: 21px; letter-spacing: -.035em; }
+.innovation-grid p { margin: 12px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.feasibility-panel { overflow: hidden; margin-top: 58px; border: 1px solid var(--line); border-radius: 24px; background: rgba(255,255,255,.58); }
+.feasibility-intro { display: grid; grid-template-columns: 150px 1fr; gap: 22px 28px; padding: 30px; border-bottom: 1px solid var(--line); }
+.feasibility-intro > span { color: #668a59; font-size: 10px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.feasibility-intro h3 { font-size: 25px; line-height: 1.2; letter-spacing: -.035em; }
+.feasibility-intro p { grid-column: 2; max-width: 750px; margin: -8px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.feasibility-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.feasibility-grid div { min-height: 170px; padding: 25px 28px; border-bottom: 1px solid var(--line); }
+.feasibility-grid div:nth-child(odd) { border-right: 1px solid var(--line); }
+.feasibility-grid b, .feasibility-grid strong { display: block; }
+.feasibility-grid b { color: var(--blue); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.feasibility-grid div:last-child b { color: #b46a2c; }
+.feasibility-grid strong { margin-top: 13px; font-size: 16px; }
+.feasibility-grid p { margin: 9px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.feasibility-roadmap { display: flex; align-items: center; justify-content: space-between; gap: 9px; padding: 23px 28px; background: rgba(53,109,255,.045); }
+.feasibility-roadmap span { color: var(--ink); font-size: 10px; line-height: 1.5; }
+.feasibility-roadmap b { display: block; color: var(--blue); font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
+.feasibility-roadmap i { color: #9aabba; font-style: normal; }
+.research-plan { margin-top: 64px; }
+.research-plan-heading { display: grid; grid-template-columns: 150px 1fr; gap: 15px 28px; align-items: end; margin-bottom: 25px; }
+.research-plan-heading > span { color: #668a59; font-size: 10px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.research-plan-heading h3 { font-size: 28px; line-height: 1.18; letter-spacing: -.04em; }
+.research-plan-heading p { grid-column: 2; max-width: 720px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.research-method-grid { display: grid; grid-template-columns: 1fr 1fr; margin: 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+.research-method-grid li { display: grid; grid-template-columns: 36px 1fr; gap: 13px; min-height: 164px; padding: 25px 25px 25px 0; border-bottom: 1px solid var(--line); }
+.research-method-grid li:nth-child(even) { padding-left: 25px; border-left: 1px solid var(--line); }
+.research-method-grid > li > b { padding-top: 4px; color: #668a59; font: 750 10px/1 monospace; }
+.research-method-grid h4 { font-size: 17px; letter-spacing: -.025em; }
+.research-method-grid p { margin: 9px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+
 #work { padding-block: 130px 150px; }
 .section-heading { display: grid; grid-template-columns: 240px 1fr; gap: 70px; align-items: end; margin-bottom: 54px; }
 .section-heading h2 { grid-column: 2; }
@@ -294,6 +350,13 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .contact-section { grid-template-columns: 1fr; padding: 56px 38px; gap: 40px; }
   .lab-heading, .lab-grid, .evidence-grid, .landscape-heading, .agent-regions { grid-template-columns: 1fr; }
   .landscape-heading { gap: 30px; }
+  .research-flow { grid-template-columns: 1fr 1fr; }
+  .research-flow > i { display: none; }
+  .research-flow div:last-child { grid-column: 1 / -1; }
+  .feasibility-roadmap { align-items: flex-start; flex-direction: column; }
+  .feasibility-roadmap i { display: none; }
+  .research-plan-heading { grid-template-columns: 1fr; align-items: start; }
+  .research-plan-heading p { grid-column: 1; }
 }
 
 @media (max-width: 620px) {
@@ -326,5 +389,20 @@ footer { display: flex; justify-content: space-between; padding-block: 25px 40px
   .agent-list li { grid-template-columns: 28px 1fr; padding: 17px 18px; }
   .agent-list a { grid-column: 2; justify-self: start; }
   .agent-region header { align-items: flex-start; flex-direction: column; gap: 6px; padding: 20px 18px; }
+  .research-heading h2 br { display: none; }
+  .research-heading > p { font-size: 16px; }
+  .research-architecture header, .innovation-heading { align-items: flex-start; flex-direction: column; }
+  .research-architecture header strong { white-space: normal; }
+  .research-flow { grid-template-columns: 1fr; }
+  .research-flow div:last-child { grid-column: auto; }
+  .innovation-grid { grid-template-columns: 1fr; }
+  .innovation-grid article, .innovation-grid article:nth-child(even) { min-height: 0; padding: 25px 0; border-left: 0; }
+  .feasibility-intro { grid-template-columns: 1fr; padding: 25px 22px; }
+  .feasibility-intro p { grid-column: 1; margin: 0; }
+  .feasibility-grid { grid-template-columns: 1fr; }
+  .feasibility-grid div, .feasibility-grid div:nth-child(odd) { min-height: 0; border-right: 0; }
+  .feasibility-roadmap { padding: 22px; }
+  .research-method-grid { grid-template-columns: 1fr; }
+  .research-method-grid li, .research-method-grid li:nth-child(even) { min-height: 0; padding: 22px 0; border-left: 0; }
   footer { flex-direction: column; gap: 8px; }
 }

@@ -198,32 +198,108 @@
 
       <section class="section-shell split-section" id="research">
         <div class="section-label reveal">01 / Research</div>
-        <div class="about-copy reveal">
-          <h2>Researching systems that<br />reason, act, and improve.</h2>
-          <div class="about-grid">
+        <div class="research-story reveal">
+          <div class="research-heading">
+            <span class="research-kicker">M.A.Sc. research · extended direction</span>
+            <h2>Intelligent road monitoring<br />for off-road mining trucks.</h2>
             <p>
-              <strong>Agentic AI.</strong> I explore how agents plan complex goals, retrieve evidence, use tools, verify intermediate
-              results, and keep humans in control through observable, reviewable workflows.
-            </p>
-            <p>
-              <strong>Machine learning systems.</strong> I study evaluation, retrieval, classification, and decision thresholds—with
-              an emphasis on reproducible experiments and models that remain dependable beyond a polished demo.
+              Extending my graduate thesis into a physics-guided system that combines traditional signal processing with
+              machine and deep learning to detect and classify road disruptions from hydro-pneumatic strut-pressure signals.
             </p>
           </div>
-          <div class="philosophy-grid" aria-label="Research and engineering approach">
+
+          <div class="research-meta" aria-label="Research scope">
+            <span>Pressure sensing</span><span>CAN / J1939</span><span>Signal processing</span><span>ML / DL</span><span>Edge deployment</span>
+          </div>
+
+          <article class="research-architecture" aria-labelledby="research-architecture-title">
+            <header>
+              <div>
+                <span>System design</span>
+                <h3 id="research-architecture-title">Physics-guided, event-triggered learning.</h3>
+              </div>
+              <strong>Traditional testing + ML/DL</strong>
+            </header>
+            <div class="research-flow" aria-label="Hybrid road monitoring workflow">
+              <div><b>01</b><span>Strut-pressure signals</span><small>Existing truck sensors</small></div>
+              <i>→</i>
+              <div><b>02</b><span>Normalize &amp; filter</span><small>Load, speed, baseline</small></div>
+              <i>→</i>
+              <div><b>03</b><span>Trigger events</span><small>Interpretable thresholds</small></div>
+              <i>→</i>
+              <div><b>04</b><span>Classify severity</span><small>ML / temporal DL</small></div>
+              <i>→</i>
+              <div><b>05</b><span>Recommend action</span><small>HMI maintenance alert</small></div>
+            </div>
+          </article>
+
+          <div class="innovation-heading">
+            <span>Proposed contributions</span>
+            <h3>Where the research advances.</h3>
+          </div>
+          <div class="innovation-grid">
             <article>
-              <span>Research practice</span>
-              <h3>From uncertainty to evidence.</h3>
-              <p>Turn open questions into testable hypotheses, reproducible experiments, and conclusions that survive critical review.</p>
-              <strong>Question <i>→</i> Hypothesis <i>→</i> Experiment <i>→</i> Analysis <i>→</i> Reproduce</strong>
+              <b>01</b>
+              <h4>Repurpose existing sensing.</h4>
+              <p>Use the truck's load-weighing strut-pressure sensors for road monitoring without relying on dedicated cameras or IMUs.</p>
             </article>
             <article>
-              <span>Engineering practice</span>
-              <h3>From constraints to reliable systems.</h3>
-              <p>Define measurable requirements, design around trade-offs, validate failure modes, deploy with observability, and improve from evidence.</p>
-              <strong>Need <i>→</i> Design <i>→</i> Build <i>→</i> Validate <i>→</i> Deploy <i>→</i> Improve</strong>
+              <b>02</b>
+              <h4>Fuse rules with learning.</h4>
+              <p>Let physical thresholds find candidate events, then use ML/DL to reject normal vibration and classify disruption severity.</p>
+            </article>
+            <article>
+              <b>03</b>
+              <h4>Adapt across conditions.</h4>
+              <p>Normalize pressure response by payload, speed, and operating baseline to improve transfer across routes and truck states.</p>
+            </article>
+            <article>
+              <b>04</b>
+              <h4>Model multi-strut dynamics.</h4>
+              <p>Learn the timing and pressure relationships among multiple struts to infer event side, type, and maintenance priority.</p>
             </article>
           </div>
+
+          <article class="feasibility-panel" aria-labelledby="feasibility-title">
+            <div class="feasibility-intro">
+              <span>Feasibility analysis</span>
+              <h3 id="feasibility-title">Build from a working sensing chain—not from scratch.</h3>
+              <p>
+                The graduate project established the truck, pressure-sensing, CAN/J1939, CODESYS, Qt, and field-testing pipeline.
+                The next phase upgrades the analysis layer while preserving that validated engineering foundation.
+              </p>
+            </div>
+            <div class="feasibility-grid">
+              <div><b>Available</b><strong>Hardware &amp; signals</strong><p>Existing hydro-pneumatic strut sensors already provide synchronized onboard pressure data.</p></div>
+              <div><b>Available</b><strong>System integration</strong><p>CAN/J1939 acquisition, controller logic, and HMI workflows provide a practical deployment path.</p></div>
+              <div><b>Feasible now</b><strong>Traditional ML baseline</strong><p>Engineered event features can support interpretable SVM, Random Forest, and XGBoost comparisons.</p></div>
+              <div><b>Requires expansion</b><strong>Deep learning dataset</strong><p>Reliable temporal DL needs more normal-road data, repeated runs, payloads, speeds, and independent routes.</p></div>
+            </div>
+            <div class="feasibility-roadmap" aria-label="Research validation roadmap">
+              <span><b>Phase 01</b> Rebuild labels &amp; baselines</span><i>→</i>
+              <span><b>Phase 02</b> Benchmark rules vs ML</span><i>→</i>
+              <span><b>Phase 03</b> Expand field dataset</span><i>→</i>
+              <span><b>Phase 04</b> Train DL &amp; validate edge inference</span>
+            </div>
+          </article>
+
+          <section class="research-plan" aria-labelledby="research-plan-title">
+            <div class="research-plan-heading">
+              <span>Research workflow</span>
+              <h3 id="research-plan-title">A rigorous path from question to reproducible evidence.</h3>
+              <p>Each block is a living research module. Methods, datasets, experiments, and findings will be added as the work progresses.</p>
+            </div>
+            <ol class="research-method-grid">
+              <li><b>01</b><div><h4>Define the question</h4><p>Scope the task, outputs, assumptions, constraints, and measurable success criteria.</p></div></li>
+              <li><b>02</b><div><h4>Establish the gap</h4><p>Review prior methods, compare sensing choices, and state what remains unresolved.</p></div></li>
+              <li><b>03</b><div><h4>Design data &amp; ground truth</h4><p>Specify acquisition, labels, negative samples, operating conditions, and data quality controls.</p></div></li>
+              <li><b>04</b><div><h4>Build traditional baselines</h4><p>Create interpretable signal-processing and threshold methods before introducing learning models.</p></div></li>
+              <li><b>05</b><div><h4>Develop ML / DL models</h4><p>Train increasingly complex models under controlled, leakage-free data splits.</p></div></li>
+              <li><b>06</b><div><h4>Evaluate comparatively</h4><p>Use consistent metrics, independent tests, error analysis, and statistical uncertainty.</p></div></li>
+              <li><b>07</b><div><h4>Test robustness</h4><p>Run ablations and stress tests across payloads, speeds, routes, noise, and failure modes.</p></div></li>
+              <li><b>08</b><div><h4>Deploy &amp; reproduce</h4><p>Measure edge performance and document the data, code, configuration, and limitations.</p></div></li>
+            </ol>
+          </section>
         </div>
       </section>
 

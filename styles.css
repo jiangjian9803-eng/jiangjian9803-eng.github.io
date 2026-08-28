@@ -260,6 +260,7 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .model-ground, .model-road { fill: none; stroke: rgba(13,24,40,.16); stroke-width: 1; }
 .model-road { stroke: #668a59; stroke-width: 2; stroke-dasharray: 5 5; }
 .model-cab, .model-hood { fill: rgba(53,109,255,.1); stroke: #356dff; stroke-width: 2; }
+.model-bed { fill: rgba(53,109,255,.06); stroke: #356dff; stroke-width: 2; }
 .model-window { fill: rgba(13,24,40,.08); stroke: rgba(13,24,40,.3); stroke-width: 1; }
 .model-wheel { fill: #0d1828; stroke: #668a59; stroke-width: 2; }
 .model-hub { fill: #9aabba; }

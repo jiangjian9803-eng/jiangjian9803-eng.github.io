@@ -250,7 +250,7 @@ h1 em { position: relative; margin-top: .08em; color: var(--blue); font-style: n
 .research-heading h2 { margin-top: 15px; font-size: clamp(34px, 4.2vw, 56px); line-height: 1.06; letter-spacing: -.05em; text-align: left; }
 .research-title-line { display: block; }
 .research-title-line-second { text-align: right; }
-.research-heading > p { width: 100%; max-width: none; margin: 28px 0 0; color: var(--ink); font-size: 18px; line-height: 1.7; text-align: left; }
+.research-heading > p { width: 100%; max-width: none; margin: 28px 0 0; color: var(--ink); font-size: 20px; font-weight: 600; line-height: 1.65; text-align: left; }
 .physics-demo { margin-top: 28px; padding: 18px 20px 14px; border: 1px solid rgba(13,24,40,.14); border-radius: 16px; background: rgba(255,255,255,.52); text-align: left; }
 .physics-demo-label { display: flex; align-items: baseline; gap: 12px; color: var(--muted); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
 .physics-demo-label strong { color: var(--ink); font-size: 11px; letter-spacing: .02em; text-transform: none; }
